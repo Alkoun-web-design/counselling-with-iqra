@@ -8,20 +8,20 @@
 
         <title>{{ title }}</title>
         
-        <link rel="icon" type="image/x-icon" href=/assets/img/logo.svg">        
+        <link rel="icon" type="image/x-icon" href="/assets/img/logo.svg">        
         <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="/assets/css/base.css">  
         <script src="/assets/js/anime.min.js"></script>
     </head>
     <body>
         
-        {% include 'header.njk' %}
+        {% include 'blog-header.njk' %}
 
         {% include 'contactSidebar.njk' %}
 
         {{ content | safe }}
 
-        {% include 'footer.njk' %}
+        {% include 'blog-footer.njk' %}
 
         <script src="/assets/js/script.js"></script>
 		
