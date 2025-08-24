@@ -12,13 +12,15 @@ layout: 'blog-layout.njk'
     <div class="main-article-cover">
         <h1 class="main-article-title">{{ title }}</h1>
     </div>
-    <div>
+    <div class="main-author-section">
         <img class="main-author-img" src="{{ authorImage }}" alt="{{ authorImageAlt }}">
         <p class="main-article-author">written by {{ author }}</p>
         <p class="main-article-author">{{ profession }}</p>
         <p class="main-article-date">posted on {{ date | postDate }}</p>
-        <div class="main-article-body">{{ content | safe }}</div>
     </div>
+        <div class="main-article-body">{{ content | safe }}</div>
+    <div>
+
 
     
 
